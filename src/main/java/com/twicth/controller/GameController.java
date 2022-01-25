@@ -1,4 +1,4 @@
-package com.example.twicthrecommandation.controller;
+package com.twicth.controller;
 // get game, search
 public class GameController {
 
