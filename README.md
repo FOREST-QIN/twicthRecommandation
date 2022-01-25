@@ -11,3 +11,7 @@ v 0.1
 
 v 0.2
 get Twitch Token from Twitch Developers
+
+2022.01.24
+v 0.3
+reconstruct program structure, assign token when call TwitchClient
