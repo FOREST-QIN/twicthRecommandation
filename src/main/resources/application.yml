@@ -1,0 +1,7 @@
+twitchcliententity:
+ GET_TOKEN_URL: https://id.twitch.tv/oauth2/token
+ TOP_GAME_URL: https://api.twitch.tv/helix/games/top
+ CLIENT_ID: 8e01o19kutsb5znw40q2v4yhl0t4ci
+ CLIENT_SECRETE: 5ua8b5fuy5mf3nxvunmm7g9a66otxi
+ GET_GAME_URL: https://api.twitch.tv/helix/games
+ DEFAULT_LIMIT:  20
