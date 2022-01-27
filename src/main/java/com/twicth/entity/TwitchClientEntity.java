@@ -7,12 +7,20 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "twitchcliententity")
 public class TwitchClientEntity {
+  private String GET_STREAMS_URL;
+  private String GET_VIDEOS_URL;
+  private String GET_CLIPS_URL;
   private String GET_GAME_URL;
   private String GET_TOKEN_URL;
   private String TOP_GAME_URL;
   private String CLIENT_ID;
   private String CLIENT_SECRETE;
   private String TOKEN;
+  private Integer STREAM_TYPE;
+  private Integer VIDEO_TYPE;
+  private Integer CLIP_TYPE;
+
+
 
   private int DEFAULT_LIMIT;
 
@@ -83,5 +91,53 @@ public class TwitchClientEntity {
 
   public void setTOKEN(String TOKEN) {
     this.TOKEN = TOKEN;
+  }
+
+  public String getGET_STREAMS_URL() {
+    return GET_STREAMS_URL;
+  }
+
+  public void setGET_STREAMS_URL(String GET_STREAMS_URL) {
+    this.GET_STREAMS_URL = GET_STREAMS_URL;
+  }
+
+  public String getGET_VIDEOS_URL() {
+    return GET_VIDEOS_URL;
+  }
+
+  public void setGET_VIDEOS_URL(String GET_VIDEOS_URL) {
+    this.GET_VIDEOS_URL = GET_VIDEOS_URL;
+  }
+
+  public String getGET_CLIPS_URL() {
+    return GET_CLIPS_URL;
+  }
+
+  public void setGET_CLIPS_URL(String GET_CLIPS_URL) {
+    this.GET_CLIPS_URL = GET_CLIPS_URL;
+  }
+
+  public Integer getSTREAM_TYPE() {
+    return STREAM_TYPE;
+  }
+
+  public void setSTREAM_TYPE(Integer STREAM_TYPE) {
+    this.STREAM_TYPE = STREAM_TYPE;
+  }
+
+  public Integer getVIDEO_TYPE() {
+    return VIDEO_TYPE;
+  }
+
+  public void setVIDEO_TYPE(Integer VIDEO_TYPE) {
+    this.VIDEO_TYPE = VIDEO_TYPE;
+  }
+
+  public Integer getCLIP_TYPE() {
+    return CLIP_TYPE;
+  }
+
+  public void setCLIP_TYPE(Integer CLIP_TYPE) {
+    this.CLIP_TYPE = CLIP_TYPE;
   }
 }
